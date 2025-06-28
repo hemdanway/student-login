@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>تسجيل دخول الطلاب - جامعة الزقازيق</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      background-color: #e6f2ff;
+      color: #000;
+      text-align: center;
+      padding: 40px;
+    }
+    .login-box {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      display: inline-block;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      width: 250px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #0074d9;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>خدمات التسجيل الإلكتروني</h2>
+    <h3>جامعة الزقازيق</h3>
+    <input type="text" id="studentCode" placeholder="كود الطالب"><br>
+    <input type="password" id="password" placeholder="كلمة السر"><br>
+    <button onclick="login()">تسجيل دخول</button>
+  </div>
+
+  <script>
+    function login() {
+      const code = document.getElementById("studentCode").value;
+      const pass = document.getElementById("password").value;
+
+      if (code === "29112024101352" && pass === "30608151300858") {
+        window.location.href = "https://i.imgur.com/E0yIYZr.jpeg";
+      } else {
+        alert("كود الطالب أو كلمة السر غير صحيحة.");
+      }
+    }
+  </script>
+</body>
+</html>
